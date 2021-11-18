@@ -11,3 +11,33 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.container {
+    display: flex;
+}
+.col{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background: black;
+    width: 100px;
+    height: 150px;
+    border-color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 75px;
+    align-items: center;
+}
+.row{
+    background: black;
+    justify-content: center;
+}

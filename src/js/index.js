@@ -9,7 +9,19 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import Home from "./component/home.jsx";
+import { Home } from "./component/home.jsx";
+import { SecondsCounter } from "./component/SecondsCounter";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+const start = Date.now();
+
+setInterval(() => {
+	const millis = Date.now() - start;
+
+	let count = Math.floor(millis / 1000);
+
+	ReactDOM.render(
+		<SecondsCounter seconds={count} />,
+		document.querySelector("#app")
+	);
+}, 1000);
